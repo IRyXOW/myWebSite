@@ -31,3 +31,22 @@ document.getElementById("main").addEventListener('click', function() {
         closeNav();
     }
 });
+
+
+
+$(document).ready(function() {
+    $('#calendar').fullCalendar({
+        // Cấu hình lịch có thể thêm các sự kiện hoặc tùy chỉnh khác ở đây
+        events: [
+            {
+                title: 'Event1',
+                start: '2024-10-05'
+            },
+            {
+                title: 'Event2',
+                start: '2024-10-07',
+                end: '2024-10-10'
+            }
+        ]
+    });
+});
